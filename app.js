@@ -9,7 +9,7 @@ require('./model/util/db');
  */
 // var indexRouter = require('./routes/index');
 // var usersRouter = require('./routes/users');
-const apiRouter = require('./controllers/blogcontroller');
+const blogController = require('./controllers/BlogController');
 
 /*
  * Creating the express application
@@ -30,6 +30,6 @@ app.use(express.static(path.join(__dirname, 'public')));
  */
 // app.use('/', indexRouter);
 // app.use('/users', usersRouter);
-app.use('/api', apiRouter);
+app.use('/api', blogController);
 
 module.exports = app;

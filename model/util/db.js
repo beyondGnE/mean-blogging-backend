@@ -45,7 +45,7 @@ process.once('SIGTERM', function() {
   });
 });
 
-require('../blog');
+require('../BlogSchema');
 
 // NOTE: The moral of the story is that the PORT OF THE HOST
 // and the PORT OF THE CONTAINER should be

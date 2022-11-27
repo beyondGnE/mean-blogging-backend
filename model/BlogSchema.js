@@ -21,4 +21,4 @@ const blogSchema = new mongoose.Schema({
     comments: [commentSchema],
 });
 
-mongoose.model('Blog', blogSchema);
+module.exports = mongoose.model('Blog', blogSchema, 'blogs');
